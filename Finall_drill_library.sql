@@ -30,6 +30,7 @@ CREATE TABLE library_branch(
 	INSERT INTO Book_Copies
 		(BookID, BranchID, Number_Of_Copies)
 		VALUES
+		(208, 5, 6),
 		(218, 3, 12),
 		(218, 2, 1),
 		(218, 5, 6),
@@ -247,13 +248,15 @@ CREATE TABLE library_branch(
 ;
 
 
+USE Final_Drill
 
 
-	SELECT * FROM library_branch
 	SELECT * FROM Publisher
 	SELECT * FROM Books
 	SELECT * FROM Borrower
 	SELECT * FROM Book_Authors
 	SELECT * FROM Book_Loans	
-	SELECT * FROM Book_Copies
+	SELECT * FROM Book_Copies	
+	SELECT * FROM library_branch
+
 
